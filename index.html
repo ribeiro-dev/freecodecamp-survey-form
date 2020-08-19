@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+</head>
+<body>
+
+    <header>
+        <h1 id="title">Gaming Survey Form</h1>
+        <p>Help us to get to know more about the gamer community</p>
+    </header>
+
+    <form id="survey-form">
+        <div>
+            <label for="name" id="name-label">Name</label>
+            <input type="text" name="name" id="name" placeholder="Enter your name" required>
+        </div>
+
+        <div>
+            <label for="email" id="email-label">Email</label>
+            <input type="email" name="email" id="email" placeholder="Enter your email" required>
+        </div>
+        
+        <div>
+            <label for="age" id="number-label">Age (optional)</label>
+            <input type="number" name="age" id="age" min="10" max="99" placeholder="Age">
+        </div>
+
+        <div>
+            <label for="genre">Genre</label>
+            <select name="dropdown" id="dropdown">
+                <option value="" disabled selected>Select your favorite</option>
+                <option value="0">Action</option>
+                <option value="1">Adventure</option>
+                <option value="2">Role-playing</option>
+                <option value="3">Simulation</option>
+                <option value="4">Strategy</option>
+                <option value="5">Sports</option>
+                <option value="6">Other</option>
+                
+            </select>
+        </div>
+
+        <div>
+            <h4>How often do you play?</h3>
+            <input type="radio" name="hours" value="0" id="radio-0">
+            <label for="radio-0">1-2 days a week</label><br>
+            <input type="radio" name="hours" value="1" id="radio-1">
+            <label for="radio-1">3-4 days a week</label><br>
+            <input type="radio" name="hours" value="2" id="radio-2">
+            <label for="radio-2">5-6 days a week</label><br>
+            <input type="radio" name="hours" value="3" id="radio-3">
+            <label for="radio-3">Everyday</label><br>
+        </div>
+
+        
+    </form>
+</body>
+</html>
