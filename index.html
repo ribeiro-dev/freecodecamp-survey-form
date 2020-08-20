@@ -28,48 +28,53 @@
                 <label for="age" id="number-label">Age (optional)</label>
                 <input type="number" name="age" id="age" min="10" max="99" placeholder="Age">
             </div>
+            
 
-            <div>
-                <label for="genre">Genre</label>
-                <select name="dropdown" id="dropdown">
-                    <option value="" disabled selected>Select your favorite</option>
-                    <option value="0">Action</option>
-                    <option value="1">Adventure</option>
-                    <option value="2">Role-playing</option>
-                    <option value="3">Simulation</option>
-                    <option value="4">Strategy</option>
-                    <option value="5">Sports</option>
-                    <option value="6">Other</option>
-                    
+                <p>How often do you play?</p>
+                <select name="dropdown" id="dropdown" required>
+                    <option value="" disabled selected>Select an option</option>
+                    <option value="0">1-2 days a week</option>
+                    <option value="1">3-4 days a week</option>
+                    <option value="2">5-6 days a week</option>
+                    <option value="3">Everyday</option>
                 </select>
             </div>
 
             <div>
-                <p>How often do you play?</p>
-                <input type="radio" name="hours" value="0" id="radio-0">
-                <label for="radio-0">1-2 days a week</label><br>
-                <input type="radio" name="hours" value="1" id="radio-1">
-                <label for="radio-1">3-4 days a week</label><br>
-                <input type="radio" name="hours" value="2" id="radio-2">
-                <label for="radio-2">5-6 days a week</label><br>
-                <input type="radio" name="hours" value="3" id="radio-3">
-                <label for="radio-3">Everyday</label>
+                <p>Wich platform do you play?</p>
+                <input type="radio" name="platform" value="pc" id="radio-pc">
+                <label for="radio-pc">PC</label><br>
+                <input type="radio" name="platform" value="console" id="radio-console">
+                <label for="radio-console">Console</label><br>
+                <input type="radio" name="platform" value="both" id="radio-both">
+                <label for="radio-both">Both</label><br>
             </div>
+            
+            <div>
+                <p>Which genres do you play?</p>
+                <input type="checkbox" name="action" value="action" id="checkbox-action">
+                <label for="checkbox-action">Action</label><br>
+                <input type="checkbox" name="adventure" value="adventure" id="checkbox-adventure">
+                <label for="checkbox-adventure">Adventure</label><br>
+                <input type="checkbox" name="rpg" value="rpg" id="checkbox-rpg">
+                <label for="checkbox-rpg">RPG</label><br>
+                <input type="checkbox" name="simulation" value="console" id="checkbox-console">
+                <label for="checkbox-console">Simulation</label><br>
+                <input type="checkbox" name="strategy" value="strategy" id="checkbox-strategy">
+                <label for="checkbox-strategy">Strategy</label><br>
+                <input type="checkbox" name="sports" value="sports" id="checkbox-sports">
+                <label for="checkbox-sports">Sports</label><br>
+                <input type="checkbox" name="other" value="other" id="checkbox-other">
+                <label for="checkbox-other">Other</label><br>
+            </div>
+            
 
             <div>
-                <p>Which platform do you play?</p>
-                <input type="checkbox" name="pc" id="checkbox-pc">
-                <label for="checkbox-pc">PC</label><br>
-                <input type="checkbox" name="console" id="checkbox-console">
-                <label for="checkbox-console">Console</label><br>
-            </div>
-
-            <div>
-                <label for="comments">Tell about your favorite game:</label><br>
+                <label for="comments">Any comments or suggestions? Leave below</label><br>
                 <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
             </div>
 
-            <button type="submit">Submit</button>
+            <button type="submit" id="submit">Submit</button>
         </form>
 
     </main>
