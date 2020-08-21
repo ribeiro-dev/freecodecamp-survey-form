@@ -1,0 +1,100 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 10px;
+    font-family: 'Poppins', sans-serif;
+
+    --font-color: #faf9f9;
+    --dark-blue: #489fb5;
+    --light-blue: #82c0cc;
+}
+
+body {
+    /* background-color: #89b0ae;  */
+    background-color: var(--dark-blue); 
+
+    text-align: center;
+}
+
+main {
+    margin: 30px auto;
+    width: 50vw;
+}
+
+main header {
+    font-size: 1.8rem;
+
+    padding: 0 35px;
+    margin-bottom: 30px;
+
+    color: var(--font-color);
+}
+
+main #survey-form {
+    background-color: var(--light-blue);
+    border-radius: 8px;
+    padding: 35px;
+    text-align: start;
+
+    color: var(--font-color);
+    font-size: 2rem;
+}
+
+
+main #survey-form div {
+    margin: 25px 0;
+}
+
+
+#name, #email, #age, #dropdown {
+    width: 100%;
+    height: 35px;
+    display: block;
+
+    margin-top: 4px;
+    padding: 0 8px;
+    border-radius: 4px;
+
+    border-style: none;
+}
+
+#name:focus, #email:focus, #age:focus, #dropdown:focus {
+    outline-style: none;
+    border-bottom: 3px solid var(--dark-blue);
+}
+
+#survey-form select {
+    background-color: white;
+    border-style: none;
+}
+
+
+
+#survey-form textarea {
+    resize: none;
+    width: 100%;
+
+    border-style: none;
+    border-radius: 2px;
+    margin-top: 5px;
+}
+
+#survey-form #submit {
+    width: 100%;
+    height: 40px;
+
+    border-style: none;
+    border-radius: 4px;
+
+    background-color: white;
+    color: var(--dark-blue);
+
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+
